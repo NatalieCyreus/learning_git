@@ -1,0 +1,96 @@
+<DOCTYPE html>
+<html lang ='en'>
+<head>
+<meta charset= 'utf-8'/>
+<title>FULLSTACK JavaScript introduction </title>
+<script type ='text/Javascript'>
+
+document.write('Hello World');
+
+          // no.5 CONDITIONALS
+// Conditionals : IF/ELSE (booleans, true/false)
+function greaterThanFive(num){
+  if(num> 5){
+    return "yes, the number is greater than five!"
+  } else {
+    return "No, the number is not greater than five!"
+  }
+}
+
+greaterThanFive(7);
+
+/* comparison operators
+  - Compares two different values
+  - The end goal is to return "true" or "false"
+
+Comparison operators
+  - ">" :greater than
+  - "<" : Less than
+  - ">=" :Greater than or equal to
+  - ">=" :Less tha or equal to
+Equality operators
+  - "===" : Equal to (Identity operator)
+  - "!==" :Not equal to (Non-identity operator)
+*/
+
+/*Else-If statements
+  -Extends an If statement. ELSE IF statements allow your program to
+  evaluate additional expressions
+  - Checks from top to bottom
+*/
+function isBakersDozen(guess){
+  if(guess=== 13){
+    return "You are correct!";
+  }else if(guess=== 12){
+    return "Close! But wrong dozen!";
+  }else{
+    return "try Again";
+  }
+}
+/* Logical Operators
+  - 3 logical Operators:
+    - "&&" : AND - Both Conditions must be true
+    - "||" : OR - One Condition must be true
+    - "!" : NOT - Toggles a statement between true/false
+*/
+
+var skyColor = "gray";
+var isThundering = false;
+
+if(skyColor === "gray" && isThundering === true){
+  console.log("It's Raining!");
+}
+
+25>10;
+
+
+// CHALLENGE : Comparison and Equality Operators (1)
+
+// Adjust each expression so every statement logs true.  You can manipulate the operator or operands (values).
+//Natalies answer/Changes:
+console.log(21 > 20, 'one');
+console.log(1 <= 20-19, 'two');
+console.log('hello !==' === 'hello !==', 'three');
+console.log(8 !== 7, 'four');
+console.log(7+7 >= 15-2, 'five');
+console.log("Ful" !== "Full", 'six');
+console.log((22+13 >= 35) === 4 > 2, 'seven');
+//Fulstackacademy answer:
+console.log(10 < 20, 'one');
+console.log(4 >= 20-19, 'two');
+console.log('hello !==' === 'hello !==', 'three');
+console.log(7 === 7, 'four');
+console.log(7+2 <= 15-2, 'five');
+console.log("Full"== "Full", 'six');
+console.log((22+13 >= 35) === 4 > 2, 'seven');
+
+
+
+
+</script>
+
+</head>
+<body>
+
+</body>
+</html>
