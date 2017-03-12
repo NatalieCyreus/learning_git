@@ -12,12 +12,12 @@ How to create a Git project:
 ---------------------------------------
 Step 1.
 Create a project.
-Example in atom. Share it in a folder.
+Example in atom. Save it in a folder.
 ---------------------------------------
 Step 2.
-Create a Git project.
+Choose the folder and initialize it. Make the folder connected to Git.
 In the terminal write:
-git init (initialize) and name a file. !!?!
+git init (initialize)
 --------------------------------------------
 step 3.
 Start track the project in git.
@@ -80,4 +80,7 @@ Use Git commands to help keep track of changes made to a project:
   -git add (adds files from the working directory to the staging area)
   -git diff (shows the difference between the working directory and the staging area)
   -git commit (permanently stores file changes from the staging area in the repository)
-  -git log (shows a list of all previous commits) 
+  -git log (shows a list of all previous commits)
+
+-------------------
+test 
