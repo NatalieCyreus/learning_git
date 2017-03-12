@@ -1,0 +1,83 @@
+Git
+
+Git is a software to keep track of changes of a project.
+Git records the changes you make to a project, stores the changes and let you reference them later.
+
+Theres 3 part in a Git project
+1. A working directory - The creating, editing, deleting and organization.
+2. A staging area - you'll list changes you done in the working directory.
+3. A repository - Where Git permanently stores those changes as different versions of the project.
+
+How to create a Git project:
+---------------------------------------
+Step 1.
+Create a project.
+Example in atom. Share it in a folder.
+---------------------------------------
+Step 2.
+Create a Git project.
+In the terminal write:
+git init (initialize) and name a file. !!?!
+--------------------------------------------
+step 3.
+Start track the project in git.
+-git status-lets you see the status of the project.
+After step 2, the project will be seen as red and the output will be "untracked files".
+The git sees the file, but has not ben told to start tracking the project yet.
+To track the project in git (needs to be added to the staging area):
+
+ -git add filename-
+
+After you added the file, check git status of the file. - A "new file: filename" will be in green, and tells that its added.
+----------------------------------------------------
+Step 4.
+Save new changes.
+Now the new file is added to the staging area. But if changes are made those have to be saved.
+to view the changes made:
+-git diff filename-
+    ex:
+        $ git diff scene-1.txt
+        diff --git a/scene-1.txt b/scene-1.txt
+        index 913b994..2d6e91a 100644
+        --- a/scene-1.txt
+        +++ b/scene-1.txt
+        @@ -1 +1,2 @@
+         Harry Programmer and the Sorcerers Code:
+         Scene 1
+        +Dumblediff: I should've known you would
+        be here, Professor McGonagit.
+
+To add the changes to the staging area in Git, you need to add the file again.
+-git add filename-
+----------------------------------------------
+Step 5.
+Commit - permanently store the changes from the staging area inside the repository.
+To commit its also needed to comment changes -
+Standard Conventions for Commit Messages:
+
+-Must be in quotation marks
+-Written in the present tense
+-Should be brief (50 characters or less) when using -m
+
+example:
+git commit -m"Complete first line of dialogue"
+---------------------------------------------------
+Step 6.
+Refer back to earlier versions of project
+
+git log
+output -->
+A 40-character code, called a SHA, that uniquely identifies the commit. This appears in orange text.
+The commit author
+The date and time of the commit
+The commit message
+-------------------------------------------------------
+Codecademy:
+Git is the industry-standard version control system for web developers
+Use Git commands to help keep track of changes made to a project:
+  -git init (creates a new Git repository)
+  -git status (inspects the contents of the working directory and staging area)
+  -git add (adds files from the working directory to the staging area)
+  -git diff (shows the difference between the working directory and the staging area)
+  -git commit (permanently stores file changes from the staging area in the repository)
+  -git log (shows a list of all previous commits) 
